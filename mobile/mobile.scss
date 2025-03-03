@@ -1,13 +1,14 @@
 .topic-thumbnails-list .topic-list-thumbnail {
-  width: 45px;
-  height: 45px;
+  width: 6em;
+  height: 4.5em;
+  border-radius: var(--d-border-radius);
 }
 
 .topic-thumbnails-list {
   .topic-list-body .topic-list-item {
     .right {
       display: grid;
-      grid-template-columns: 15% auto 15%;
+      grid-template-columns: 6em auto 10%; //changed from 'auto auto 10%' because it introduced weird layout bug
       grid-template-areas: "thumbnail title replies" "thumbnail data data";
       gap: 0 0.5em;
       .num {
